@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>رحلتي في البرمجة - مدونة محمد عنتر</title>
+    <link rel="stylesheet" href="styles/styless.css">
+    <link rel="" href="">
+</head>
+<body>
+    <!-- 🔵 1. شريط التنقل (Navbar) -->
+    <header>
+        <h1>مدونة محمد عنتر</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html#الرئيسية">الرئيسية</a></li>
+                <li><a href="index.html#المقالات">المقالات</a></li>
+                <li><a href="index.html#تواصل">تواصل معي</a></li>
+            </ul>
+        </nav>
+    </header>
+    <style>
+        /* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Cairo', 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.6;
+    direction: rtl;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header and Navigation */
+header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #34495e;
+}
+
+/* Sections */
+section {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+section h2 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 0.5rem;
+}
+
+/* Blog Posts */
+.post {
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    background-color: #f9f9f9;
+    border-radius: 6px;
+}
+
+.post h3 {
+    color: #2980b9;
+    margin-bottom: 0.5rem;
+}
+
+.post a {
+    display: inline-block;
+    color: #2980b9;
+    text-decoration: none;
+    margin-top: 0.5rem;
+    transition: color 0.3s ease;
+}
+
+.post a:hover {
+    color: #3498db;
+    text-decoration: underline;
+}
+
+/* Contact Form */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+form input, 
+form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+form textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+form button {
+    background-color: #2980b9;
+    color: white;
+    border: none;
+    padding: 0.75rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #3498db;
+}
+
+/* Footer */
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section {
+        margin: 1rem;
+        padding: 1rem;
+    }
+}
+    </style>
+
+    <!-- 🔵 2. محتوى المقال (Article Content) -->
+    <section id="المقال">
+        <h2>رحلتي في عالم البرمجة</h2>
+        
+        <article class="post">
+            <p>تجربتي في البرمجة كانت مليئة بالتحديات والمغامرات. عندما بدأت رحلتي، لم أكن أعرف الفرق بين HTML وPython، لكن مع الوقت، تغيرت الأمور بشكل كبير.</p>
+            
+            <p>في البداية، كان التحدي الأكبر هو فهم المفاهيم الأساسية. أتذكر اليوم الأول الذي حاولت فيه كتابة أول كود لي. كنت أحاول إنشاء صفحة ويب بسيطة باستخدام HTML وCSS. لم يكن لدي أي فكرة عن كيفية تنسيق النصوص أو تعديل الألوان، لكن مع المحاولة والخطأ، بدأت أفهم كيف تعمل هذه اللغة.</p>
+            
+            <p>بعد ذلك، قررت الانتقال إلى تعلم JavaScript، وهنا بدأت المتعة الحقيقية. تعلمت كيفية جعل صفحات الويب تفاعلية، مثل إضافة أزرار تعمل عند النقر، أو إنشاء عدادات زمنية. هذا جعلني أشعر بالقوة والإبداع.</p>
+            
+            <p>لكن أكثر لحظات الفخر كانت عندما أنشأت أول مشروع برمجي حقيقي، وهو "مدونة شخصية". في هذا المشروع، استخدمت HTML وCSS لتنفيذ تصميم جميل، وبدأت أرى كيف يمكن للكود أن يتحول إلى شيء حقيقي ومفيد.</p>
+            
+            <p>بالطبع، لم تكن كل الأيام سهلة. في بعض الأحيان، كنت أقضي ساعات في محاولة إصلاح خطأ صغير. لكن مع الوقت، تعلمت الصبر وأدركت أن البرمجة ليست مجرد كتابة كود، بل هي عملية حل مشكلات.</p>
+            
+            <p>اليوم، أشعر بثقة أكبر. أفكر في تعلم لغات جديدة مثل Python والتعمق في الأمن السيبراني. البرمجة ليست مجرد مهارة، بل هي رحلة من الإبداع والتعلم المستمر، وأنا متحمس لما سيأتي في المستقبل.</p>
+        </article>
+    </section>
+
+    <!-- 🔵 3. تذييل (Footer) -->
+    <footer>
+        <p>© 2024 مدونة محمد عنتر - جميع الحقوق محفوظة</p>
+    </footer>
+</body>
+</html>
